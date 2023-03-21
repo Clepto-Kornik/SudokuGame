@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SudokuSolver.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ComponentProgramming</a> &gt; <a href="index.source.html" class="el_package">sudoku</a> &gt; <span class="el_source">SudokuSolver.java</span></div><h1>SudokuSolver.java</h1><pre class="source lang-java linenums">package sudoku;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+<span class="fc" id="L8">public class SudokuSolver {</span>
+    public void fillBoard(int[][] board) {
+<span class="fc" id="L10">        clearBoard(board);</span>
+
+<span class="fc" id="L12">        backtrack(0, 0,board);</span>
+<span class="fc" id="L13">    }</span>
+
+    private boolean backtrack(int row, int col, int[][] board) {
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (row == 9) {</span>
+<span class="fc" id="L17">            return true;</span>
+        }
+
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        int nextRow = col == 8 ? row + 1 : row;</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        int nextCol = col == 8 ? 0 : col + 1;</span>
+
+<span class="pc bpc" id="L23" title="1 of 2 branches missed.">        if (board[row][col] != 0) {</span>
+<span class="nc" id="L24">            return backtrack(nextRow, nextCol, board);</span>
+        }
+
+<span class="fc" id="L27">        List&lt;Integer&gt; candidates = new ArrayList&lt;&gt;(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));</span>
+<span class="fc" id="L28">        Collections.shuffle(candidates);</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        for (int candidate : candidates) {</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">            if (isValid(row, col, candidate, board)) {</span>
+<span class="fc" id="L31">                board[row][col] = candidate;</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">                if (backtrack(nextRow, nextCol, board)) {</span>
+<span class="fc" id="L33">                    return true;</span>
+                }
+<span class="fc" id="L35">                board[row][col] = 0;</span>
+            }
+<span class="fc" id="L37">        }</span>
+
+<span class="fc" id="L39">        return false;</span>
+    }
+
+    private boolean isValid(int row, int col, int num, int [][]board) {
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="fc bfc" id="L44" title="All 4 branches covered.">            if (board[row][i] == num || board[i][col] == num) {</span>
+<span class="fc" id="L45">                return false;</span>
+            }
+        }
+
+<span class="fc" id="L49">        int boxRow = (row / 3) * 3;</span>
+<span class="fc" id="L50">        int boxCol = (col / 3) * 3;</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        for (int i = boxRow; i &lt; boxRow + 3; i++) {</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">            for (int j = boxCol; j &lt; boxCol + 3; j++) {</span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">                if (board[i][j] == num) {</span>
+<span class="fc" id="L54">                    return false;</span>
+                }
+            }
+        }
+
+<span class="fc" id="L59">        return true;</span>
+    }
+
+    private void clearBoard(int[][] board) {
+<span class="fc bfc" id="L63" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="fc" id="L65">                board[i][j] = 0;</span>
+            }
+        }
+<span class="fc" id="L68">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

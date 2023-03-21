@@ -7,10 +7,18 @@ class SudokuClassTest {
 
     @Test
     public void CompareSudoku() {
-        SudokuClass sudoku1 = new SudokuClass();
-        SudokuClass sudoku2 = new SudokuClass();
-        sudoku1.fillBoard();
-        sudoku2.fillBoard();
-        assertNotSame(sudoku1, sudoku2);
+        SudokuBoard sudoku1 = new SudokuBoard();
+        SudokuBoard sudoku2 = new SudokuBoard();
+        int flag = 0;
+        sudoku1.solveGame();
+        sudoku2.solveGame();
+        for(int i=0;i<9;i++){
+            for(int j=0;j<9;j++){
+                if(sudoku1.get(i,j) == sudoku2.get(i,j)){
+                    flag ++;
+                }
+            }
+        }
+        if (flag == 81) fail("The 2 sudokus are the same");
     }
 }

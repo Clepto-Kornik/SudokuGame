@@ -1,2 +1,4 @@
-org\example\Main.class
+sudoku\SudokuSolver.class
+sudoku\SudokuBoard.class
 sudoku\SudokuClass.class
+org\example\Main.class
