@@ -1,6 +1,7 @@
 package sudoku;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class SudokuColumn {
     private SudokuField[] column;
@@ -9,11 +10,16 @@ public class SudokuColumn {
         this.column = column;
     }
 
+    public SudokuField[] getColumn() {
+        return column;
+    }
+
     public boolean verify() {
-        Arrays.sort(column);
+        Arrays.sort(column, Comparator.comparingInt(SudokuField::getFieldValue));
         boolean isOk = true;
-        for (int i = 0; i < 8; i++) {
-            if (column[i].getFieldValue() == i + 1) {
+        int[] temp = {1,2,3,4,5,6,7,8,9};
+        for (int i = 0; i < 9; i++) {
+            if (column[i].getFieldValue() != temp[i]) {
                 isOk = false;
             }
         }

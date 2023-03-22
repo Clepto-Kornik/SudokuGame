@@ -1,6 +1,7 @@
 package sudoku;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class SudokuRow {
     private SudokuField[] row;
@@ -9,11 +10,16 @@ public class SudokuRow {
         this.row = row;
     }
 
+    public SudokuField[] getRow() {
+        return row;
+    }
+
     public boolean verify() {
-        Arrays.sort(row);
+        Arrays.sort(row, Comparator.comparingInt(SudokuField::getFieldValue));
         boolean isOk = true;
-        for (int i = 0; i < 8; i++) {
-            if (row[i].getFieldValue() == i + 1) {
+        int[] temp = {1,2,3,4,5,6,7,8,9};
+        for (int i = 0; i < 9; i++) {
+            if (row[i].getFieldValue() != temp[i]) {
                 isOk = false;
             }
         }

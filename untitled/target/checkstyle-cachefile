@@ -1,9 +1,10 @@
-#Wed Mar 22 13:41:37 CET 2023
+#Wed Mar 22 21:31:26 CET 2023
 configuration*?=FECEE6CB24AFCCB3CF57922B8FA965ED680AC6A1
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuClass.java=1678883802108
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuRow.java=1679488877507
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuColumn.java=1679488833810
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuBoard.java=1679487679874
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuField.java=1679483373218
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuBox.java=1679515298340
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuRow.java=1679516799133
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuColumn.java=1679516799123
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuBoard.java=1679515213820
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuSolver.java=1679484162711
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuField.java=1679515366155
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\org\\example\\Main.java=1679407380293

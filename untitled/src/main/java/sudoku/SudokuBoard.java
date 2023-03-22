@@ -14,15 +14,17 @@ public class SudokuBoard {
         board = new SudokuField[rows][columns];
         for (int row = 0; row < board.length; row++) {
             for (int column = 0; column < board[row].length; column++) {
-                board[row][column] = new SudokuField();
+                board[row][column] = new SudokuField(0);
             }
         }
     }
 
-    //  public void set(int x, int y, SudokuField input) {
-    //     board[x][y] = input;
-    //  }
-    public SudokuField get(int x, int y) {
+      public void set(int x, int y, SudokuField input) {
+        SudokuField newField = new SudokuField(1);
+         board[x][y] = newField;
+      }
+
+      public SudokuField get(int x, int y) {
         return board[x][y];
     }
 
