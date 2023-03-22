@@ -6,66 +6,66 @@ import java.util.Collections;
 import java.util.List;
 
 <span class="fc" id="L8">public class SudokuSolver {</span>
-    public void fillBoard(int[][] board) {
-<span class="fc" id="L10">        clearBoard(board);</span>
+    public void fillBoard(SudokuField[][] board) {
+        //clearBoard(board);
 
 <span class="fc" id="L12">        backtrack(0, 0,board);</span>
 <span class="fc" id="L13">    }</span>
 
-    private boolean backtrack(int row, int col, int[][] board) {
-<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (row == 9) {</span>
-<span class="fc" id="L17">            return true;</span>
+    private boolean backtrack(int row, int col, SudokuField[][] board) {
+        //clearBoard(board);
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if (row == 9) {</span>
+<span class="fc" id="L18">            return true;</span>
         }
 
-<span class="fc bfc" id="L20" title="All 2 branches covered.">        int nextRow = col == 8 ? row + 1 : row;</span>
-<span class="fc bfc" id="L21" title="All 2 branches covered.">        int nextCol = col == 8 ? 0 : col + 1;</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        int nextRow = col == 8 ? row + 1 : row;</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        int nextCol = col == 8 ? 0 : col + 1;</span>
 
-<span class="pc bpc" id="L23" title="1 of 2 branches missed.">        if (board[row][col] != 0) {</span>
-<span class="nc" id="L24">            return backtrack(nextRow, nextCol, board);</span>
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        if (board[row][col].getFieldValue() != 0) {</span>
+<span class="nc" id="L25">            return backtrack(nextRow, nextCol, board);</span>
         }
 
-<span class="fc" id="L27">        List&lt;Integer&gt; candidates = new ArrayList&lt;&gt;(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));</span>
-<span class="fc" id="L28">        Collections.shuffle(candidates);</span>
-<span class="fc bfc" id="L29" title="All 2 branches covered.">        for (int candidate : candidates) {</span>
-<span class="fc bfc" id="L30" title="All 2 branches covered.">            if (isValid(row, col, candidate, board)) {</span>
-<span class="fc" id="L31">                board[row][col] = candidate;</span>
-<span class="fc bfc" id="L32" title="All 2 branches covered.">                if (backtrack(nextRow, nextCol, board)) {</span>
-<span class="fc" id="L33">                    return true;</span>
+<span class="fc" id="L28">        List&lt;Integer&gt; candidates = new ArrayList&lt;&gt;(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));</span>
+<span class="fc" id="L29">        Collections.shuffle(candidates);</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        for (int candidate : candidates) {</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">            if (isValid(row, col, candidate, board)) {</span>
+<span class="fc" id="L32">                board[row][col].setFieldValue(candidate);</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">                if (backtrack(nextRow, nextCol, board)) {</span>
+<span class="fc" id="L34">                    return true;</span>
                 }
-<span class="fc" id="L35">                board[row][col] = 0;</span>
+<span class="fc" id="L36">                board[row][col].setFieldValue(0);</span>
             }
-<span class="fc" id="L37">        }</span>
+<span class="fc" id="L38">        }</span>
 
-<span class="fc" id="L39">        return false;</span>
+<span class="fc" id="L40">        return false;</span>
     }
 
-    private boolean isValid(int row, int col, int num, int [][]board) {
-<span class="fc bfc" id="L43" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
-<span class="fc bfc" id="L44" title="All 4 branches covered.">            if (board[row][i] == num || board[i][col] == num) {</span>
-<span class="fc" id="L45">                return false;</span>
+    private boolean isValid(int row, int col, int num, SudokuField [][]board) {
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="fc bfc" id="L45" title="All 4 branches covered.">            if (board[row][i].getFieldValue() == num || board[i][col].getFieldValue() == num) {</span>
+<span class="fc" id="L46">                return false;</span>
             }
         }
 
-<span class="fc" id="L49">        int boxRow = (row / 3) * 3;</span>
-<span class="fc" id="L50">        int boxCol = (col / 3) * 3;</span>
-<span class="fc bfc" id="L51" title="All 2 branches covered.">        for (int i = boxRow; i &lt; boxRow + 3; i++) {</span>
-<span class="fc bfc" id="L52" title="All 2 branches covered.">            for (int j = boxCol; j &lt; boxCol + 3; j++) {</span>
-<span class="fc bfc" id="L53" title="All 2 branches covered.">                if (board[i][j] == num) {</span>
-<span class="fc" id="L54">                    return false;</span>
+<span class="fc" id="L50">        int boxRow = (row / 3) * 3;</span>
+<span class="fc" id="L51">        int boxCol = (col / 3) * 3;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">        for (int i = boxRow; i &lt; boxRow + 3; i++) {</span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">            for (int j = boxCol; j &lt; boxCol + 3; j++) {</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">                if (board[i][j].getFieldValue() == num) {</span>
+<span class="fc" id="L55">                    return false;</span>
                 }
             }
         }
 
-<span class="fc" id="L59">        return true;</span>
+<span class="fc" id="L60">        return true;</span>
     }
 
-    private void clearBoard(int[][] board) {
-<span class="fc bfc" id="L63" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
-<span class="fc bfc" id="L64" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j++) {</span>
-<span class="fc" id="L65">                board[i][j] = 0;</span>
+    private void clearBoard(SudokuField[][] board) {
+<span class="nc bnc" id="L64" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="nc" id="L66">                board[i][j].setFieldValue(0);</span>
             }
         }
-<span class="fc" id="L68">    }</span>
-
+<span class="nc" id="L69">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

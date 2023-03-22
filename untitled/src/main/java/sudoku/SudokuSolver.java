@@ -6,13 +6,14 @@ import java.util.Collections;
 import java.util.List;
 
 public class SudokuSolver {
-    public void fillBoard(int[][] board) {
-        clearBoard(board);
+    public void fillBoard(SudokuField[][] board) {
+        //clearBoard(board);
 
         backtrack(0, 0,board);
     }
 
-    private boolean backtrack(int row, int col, int[][] board) {
+    private boolean backtrack(int row, int col, SudokuField[][] board) {
+        //clearBoard(board);
         if (row == 9) {
             return true;
         }
@@ -20,7 +21,7 @@ public class SudokuSolver {
         int nextRow = col == 8 ? row + 1 : row;
         int nextCol = col == 8 ? 0 : col + 1;
 
-        if (board[row][col] != 0) {
+        if (board[row][col].getFieldValue() != 0) {
             return backtrack(nextRow, nextCol, board);
         }
 
@@ -28,20 +29,20 @@ public class SudokuSolver {
         Collections.shuffle(candidates);
         for (int candidate : candidates) {
             if (isValid(row, col, candidate, board)) {
-                board[row][col] = candidate;
+                board[row][col].setFieldValue(candidate);
                 if (backtrack(nextRow, nextCol, board)) {
                     return true;
                 }
-                board[row][col] = 0;
+                board[row][col].setFieldValue(0);
             }
         }
 
         return false;
     }
 
-    private boolean isValid(int row, int col, int num, int [][]board) {
+    private boolean isValid(int row, int col, int num, SudokuField [][]board) {
         for (int i = 0; i < 9; i++) {
-            if (board[row][i] == num || board[i][col] == num) {
+            if (board[row][i].getFieldValue() == num || board[i][col].getFieldValue() == num) {
                 return false;
             }
         }
@@ -50,7 +51,7 @@ public class SudokuSolver {
         int boxCol = (col / 3) * 3;
         for (int i = boxRow; i < boxRow + 3; i++) {
             for (int j = boxCol; j < boxCol + 3; j++) {
-                if (board[i][j] == num) {
+                if (board[i][j].getFieldValue() == num) {
                     return false;
                 }
             }
@@ -59,12 +60,11 @@ public class SudokuSolver {
         return true;
     }
 
-    private void clearBoard(int[][] board) {
+    private void clearBoard(SudokuField[][] board) {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                board[i][j] = 0;
+                board[i][j].setFieldValue(0);
             }
         }
     }
-
 }

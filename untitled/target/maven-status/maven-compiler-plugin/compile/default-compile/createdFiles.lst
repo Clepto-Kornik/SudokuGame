@@ -1,4 +1,6 @@
+sudoku\SudokuRow.class
 sudoku\SudokuSolver.class
 sudoku\SudokuBoard.class
-sudoku\SudokuClass.class
+sudoku\SudokuField.class
 org\example\Main.class
+sudoku\SudokuColumn.class

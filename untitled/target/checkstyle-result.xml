@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.8.0">
-<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\org\example\Main.java">
-</file>
-<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuBoard.java">
-</file>
-<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuClass.java">
-</file>
-<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuSolver.java">
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuRow.java">
 </file>
 </checkstyle>

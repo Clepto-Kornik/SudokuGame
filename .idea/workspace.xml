@@ -5,16 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58e973c4-86d1-463b-8789-34fe45c1a949" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/sudoku/SudokuSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/src/test/java/sudoku/SudokuClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/java/sudoku/SudokuClassTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/target/ComponentProgramming-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/ComponentProgramming-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/checkstyle-cachefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/target/checkstyle-result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/checkstyle-result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/classes/sudoku/SudokuBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/classes/sudoku/SudokuBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/classes/sudoku/SudokuClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/classes/sudoku/SudokuSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/classes/sudoku/SudokuSolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/jacoco.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/Main.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/Main.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/org.example/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuBoard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuBoard.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuBoard.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuSolver.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuSolver.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuSolver.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/SudokuSolver.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/sudoku/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/surefire-reports/TEST-sudoku.SudokuClassTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/surefire-reports/TEST-sudoku.SudokuClassTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/surefire-reports/sudoku.SudokuClassTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/surefire-reports/sudoku.SudokuClassTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/sudoku/SudokuClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/sudoku/SudokuClassTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,12 +80,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/mkw_tue_1400_06",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "Errors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -55,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679393920120</updated>
-      <workItem from="1679393921513" duration="635000" />
+      <workItem from="1679393921513" duration="13551000" />
     </task>
     <servers />
   </component>

@@ -6,24 +6,64 @@ import java.util.Collections;
 import java.util.List;
 
 public class SudokuBoard {
-    private int[][] board;
+    private SudokuField[][] board;
 
-<span class="fc" id="L11">    public SudokuBoard() {</span>
-<span class="fc" id="L12">        board = new int[9][9];</span>
-<span class="fc" id="L13">    }</span>
+    private SudokuField[] temp;
 
-    public void set(int x, int y, int input) {
-<span class="nc" id="L16">        board[x][y] = input;</span>
-<span class="nc" id="L17">    }</span>
+<span class="fc" id="L13">    public SudokuBoard(int rows, int columns) {</span>
+<span class="fc" id="L14">        board = new SudokuField[rows][columns];</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        for (int row = 0; row &lt; board.length; row++) {</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">            for (int column = 0; column &lt; board[row].length; column++) {</span>
+<span class="fc" id="L17">                board[row][column] = new SudokuField();</span>
+            }
+        }
+<span class="fc" id="L20">    }</span>
 
-    public int get(int x, int y) {
-<span class="fc" id="L20">        return board[x][y];</span>
+    //  public void set(int x, int y, SudokuField input) {
+    //     board[x][y] = input;
+    //  }
+    public SudokuField get(int x, int y) {
+<span class="nc" id="L26">        return board[x][y];</span>
     }
 
     public void solveGame() {
-<span class="fc" id="L24">        SudokuSolver sudokucheck = new SudokuSolver();</span>
-<span class="fc" id="L25">        sudokucheck.fillBoard(board);</span>
-<span class="fc" id="L26">    }</span>
+<span class="fc" id="L30">        SudokuSolver sudokucheck = new SudokuSolver();</span>
+<span class="fc" id="L31">        sudokucheck.fillBoard(board);</span>
+<span class="fc" id="L32">    }</span>
+
+    public void printBoard() {
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="fc" id="L37">                System.out.print(board[i][j].getFieldValue() + &quot; &quot;);</span>
+<span class="fc bfc" id="L38" title="All 4 branches covered.">                if (j == 2 || j == 5) {</span>
+<span class="fc" id="L39">                    System.out.print(&quot;| &quot;);</span>
+                }
+            }
+<span class="fc" id="L42">            System.out.println();</span>
+<span class="fc bfc" id="L43" title="All 4 branches covered.">            if (i == 2 || i == 5) {</span>
+<span class="fc" id="L44">                System.out.println(&quot;---------------------&quot;);</span>
+            }
+        }
+<span class="fc" id="L47">        System.out.println();</span>
+<span class="fc" id="L48">    }</span>
+
+    public SudokuRow getRow(int row) {
+<span class="nc" id="L51">        temp = new SudokuField[9];</span>
+<span class="nc bnc" id="L52" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc" id="L53">            temp[i] = board [row][i];</span>
+        }
+<span class="nc" id="L55">        SudokuRow sudokuRow = new SudokuRow(temp);</span>
+<span class="nc" id="L56">        return sudokuRow;</span>
+    }
+
+    public SudokuColumn getColumn(int column) {
+<span class="nc" id="L60">        temp = new SudokuField[9];</span>
+<span class="nc bnc" id="L61" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc" id="L62">            temp[i] = board [i][column];</span>
+        }
+<span class="nc" id="L64">        SudokuColumn sudokuColumn = new SudokuColumn(temp);</span>
+<span class="nc" id="L65">        return sudokuColumn;</span>
+    }
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
