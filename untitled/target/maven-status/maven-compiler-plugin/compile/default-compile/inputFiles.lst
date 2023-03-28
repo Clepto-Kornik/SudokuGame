@@ -1,7 +1,8 @@
-C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\org\example\Main.java
-C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuRow.java
-C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuSolver.java
-C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuBoard.java
-C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuColumn.java
-C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuField.java
-C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\SudokuBox.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\board\SudokuField.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuColumn.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuRow.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\solver\SudokuSolver.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\board\SudokuBoard.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuGroup.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\solver\TypeSudokuSolver.java
+C:\Users\HP\IdeaProjects\COMP\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuBox.java

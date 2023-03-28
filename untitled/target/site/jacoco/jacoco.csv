@@ -1,8 +1,8 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-ComponentProgramming,sudoku,SudokuBoard,0,172,0,20,0,33,0,17,0,7
-ComponentProgramming,sudoku,SudokuSolver,28,204,5,25,5,28,4,16,1,4
-ComponentProgramming,sudoku,SudokuBox,36,0,4,0,10,0,5,0,3,0
-ComponentProgramming,sudoku,SudokuColumn,0,75,0,4,0,11,0,5,0,3
-ComponentProgramming,sudoku,SudokuRow,0,75,0,4,0,11,0,5,0,3
-ComponentProgramming,sudoku,SudokuField,0,13,0,0,0,6,0,3,0,3
-ComponentProgramming,org.example,Main,4,0,0,0,2,0,2,0,2,0
+ComponentProgramming,sudoku.solver,TypeSudokuSolver,0,159,0,16,0,25,0,13,0,5
+ComponentProgramming,sudoku.board,SudokuBoard,0,252,0,38,0,48,0,29,0,10
+ComponentProgramming,sudoku.board,SudokuField,0,17,0,0,0,8,0,4,0,4
+ComponentProgramming,sudoku.group,SudokuRow,0,4,0,0,0,2,0,1,0,1
+ComponentProgramming,sudoku.group,SudokuBox,0,4,0,0,0,2,0,1,0,1
+ComponentProgramming,sudoku.group,SudokuGroup,0,47,0,6,0,10,0,5,0,2
+ComponentProgramming,sudoku.group,SudokuColumn,0,4,0,0,0,2,0,1,0,1
