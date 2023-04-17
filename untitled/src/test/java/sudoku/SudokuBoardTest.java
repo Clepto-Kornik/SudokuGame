@@ -18,9 +18,9 @@ class SudokuBoardTest {
         sudoku2.printBoard();
 
         int equalsCount = 0;
-        for(int x=0;x<9;x++) {
-            for(int y=0;y<9;y++) {
-                if(sudoku1.get(x,y) == sudoku2.get(x,y)) {
+        for (int x=0;x<9;x++) {
+            for (int y=0;y<9;y++) {
+                if (sudoku1.get(x,y) == sudoku2.get(x,y)) {
                     equalsCount++;
                 }
             }

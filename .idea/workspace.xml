@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58e973c4-86d1-463b-8789-34fe45c1a949" name="Changes" comment="" />
+    <list default="true" id="58e973c4-86d1-463b-8789-34fe45c1a949" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/test/java/sudoku/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/java/sudoku/SudokuBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/ComponentProgramming-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/ComponentProgramming-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/checkstyle-cachefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/checkstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/checkstyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/dependencies.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/dependencies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/dependency-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/dependency-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/plugin-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/plugin-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/plugins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/project-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/project-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/project-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/project-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/site/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/site/summary.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/HP/IdeaProjects/COMP/mkw_tue_1400_06/untitled",
+    "last_opened_file_path": "C:/Users/HP/IdeaProjects/COMP/Lab_3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,10 +79,24 @@
       <updated>1679393920120</updated>
       <workItem from="1679393921513" duration="19475000" />
       <workItem from="1680010416147" duration="108000" />
+      <workItem from="1681312553201" duration="40000" />
+      <workItem from="1681312672292" duration="101000" />
+      <workItem from="1681388696553" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
