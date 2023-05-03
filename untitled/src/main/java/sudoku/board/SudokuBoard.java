@@ -28,8 +28,8 @@ public class SudokuBoard {
     }
 
     public void printBoard() {
-        for (int y = 0; y < 9; y++) {
-            for (int j = 0; j < 9; j++) {
+        for (int y = 0; y < SIZE; y++) {
+            for (int j = 0; j < SIZE; j++) {
                 System.out.print(get(j, y) + " ");
                 if (j == 2 || j == 5) {
                     System.out.print("| ");
