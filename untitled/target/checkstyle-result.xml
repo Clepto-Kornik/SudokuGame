@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.8.0">
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\board\SudokuBoard.java">
+</file>
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\board\SudokuField.java">
+</file>
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuBox.java">
+</file>
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuColumn.java">
+</file>
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuGroup.java">
+</file>
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\group\SudokuRow.java">
+</file>
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\solver\SudokuSolver.java">
+</file>
+<file name="C:\Users\Admin\Documents\GitHub\mkw_tue_1400_06\untitled\src\main\java\sudoku\solver\TypeSudokuSolver.java">
+</file>
 </checkstyle>
