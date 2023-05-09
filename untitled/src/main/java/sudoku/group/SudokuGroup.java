@@ -20,4 +20,10 @@ public abstract class SudokuGroup {
         }
         return true;
     }
+
+    @Override
+    public SudokuGroup clone () throws CloneNotSupportedException {
+        SudokuGroup clone = (SudokuGroup) super.clone();
+        return clone;
+    }
 }

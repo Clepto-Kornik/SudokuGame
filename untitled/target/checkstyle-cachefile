@@ -1,10 +1,17 @@
-#Wed May 03 11:12:22 CEST 2023
-configuration*?=FECEE6CB24AFCCB3CF57922B8FA965ED680AC6A1
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuGroup.java=1681820478213
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\SudokuSolver.java=1681391719235
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuBox.java=1681391719231
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\TypeSudokuSolver.java=1681391719236
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\board\\SudokuField.java=1681391719229
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\board\\SudokuBoard.java=1681391719228
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuColumn.java=1681391719232
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuRow.java=1681391719234
+#Tue May 09 11:13:08 CEST 2023
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\org\\example\\Main.java=1680010412554
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuBoard.java=1680010412554
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuBox.java=1680010412555
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuColumn.java=1680010412556
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuField.java=1680010412556
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuRow.java=1680010412557
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\SudokuSolver.java=1680010412557
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\board\\SudokuBoard.java=1681711720885
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\board\\SudokuField.java=1680027738336
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuBox.java=1680027738303
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuColumn.java=1680027738469
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuGroup.java=1680027738320
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuRow.java=1680027738401
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\SudokuSolver.java=1680027738368
+C\:\\Users\\HP\\IdeaProjects\\COMP\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\TypeSudokuSolver.java=1680027738384
+configuration*?=D9E11AA7D4AE09A472FE71E3B1672682A752D6E1
