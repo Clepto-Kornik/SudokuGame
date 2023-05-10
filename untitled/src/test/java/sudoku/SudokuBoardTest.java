@@ -14,8 +14,8 @@ class SudokuBoardTest {
         sudoku1.solveGame();
         sudoku2.solveGame();
 
-        sudoku1.printBoard();
-        sudoku2.printBoard();
+      //  sudoku1.printBoard();
+      //  sudoku2.printBoard();
 
         int equalsCount = 0;
         for (int x=0;x<9;x++) {

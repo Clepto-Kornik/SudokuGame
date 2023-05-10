@@ -1,8 +1,11 @@
 sudoku\board\SudokuField.class
+sudoku\solver\Dao.class
 sudoku\group\SudokuGroup.class
+sudoku\solver\SudokuBoardDaoFactory.class
 sudoku\board\SudokuBoard.class
 sudoku\solver\SudokuSolver.class
 sudoku\group\SudokuBox.class
+sudoku\solver\FileSudokuBoardDao.class
 sudoku\group\SudokuColumn.class
 sudoku\group\SudokuRow.class
 sudoku\solver\TypeSudokuSolver.class

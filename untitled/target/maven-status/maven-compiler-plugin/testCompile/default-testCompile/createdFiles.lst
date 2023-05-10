@@ -2,3 +2,4 @@ sudoku\SudokuRowTest.class
 sudoku\SudokuColumnTest.class
 sudoku\SudokuBoxTest.class
 sudoku\SudokuBoardTest.class
+sudoku\SudokuBoardDaoTest.class

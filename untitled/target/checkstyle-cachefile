@@ -1,10 +1,13 @@
-#Wed May 03 11:12:22 CEST 2023
+#Wed May 10 14:29:45 CEST 2023
 configuration*?=FECEE6CB24AFCCB3CF57922B8FA965ED680AC6A1
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\Dao.java=1683720894499
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuGroup.java=1681820478213
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\SudokuSolver.java=1681391719235
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuBox.java=1681391719231
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\FileSudokuBoardDao.java=1683721710563
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\SudokuBoardDaoFactory.java=1683721766258
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\solver\\TypeSudokuSolver.java=1681391719236
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\board\\SudokuField.java=1681391719229
-C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\board\\SudokuBoard.java=1681391719228
+C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\board\\SudokuBoard.java=1683106245006
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuColumn.java=1681391719232
 C\:\\Users\\Admin\\Documents\\GitHub\\mkw_tue_1400_06\\untitled\\src\\main\\java\\sudoku\\group\\SudokuRow.java=1681391719234
