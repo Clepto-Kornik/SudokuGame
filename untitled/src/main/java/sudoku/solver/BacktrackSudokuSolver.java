@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import sudoku.board.SudokuBoard;
 
-public class TypeSudokuSolver implements SudokuSolver {
+public class BacktrackSudokuSolver implements SudokuSolver {
 
     @Override
     public void solve(SudokuBoard board) {

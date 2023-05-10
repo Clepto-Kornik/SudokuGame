@@ -15,10 +15,16 @@
 
     <developers>
         <developer>
-            <id>234650, 236546</id>
-            <name>Patrycja Czemerych (Clepto-Kornik), Dominik Goczał</name>
+            <id>236546</id>
+            <name>Dominik Goczał</name>
             <!--suppress UnresolvedMavenProperty -->
-            <email>234650@edu.p.lodz.pl, 236546@edu.p.lodz.pl</email>
+            <email>236546@edu.p.lodz.pl</email>
+        </developer>
+        <developer>
+            <id>234650</id>
+            <name>Patrycja Czemerych (Clepto-Kornik)</name>
+            <!--suppress UnresolvedMavenProperty -->
+            <email>234650@edu.p.lodz.pl</email>
         </developer>
     </developers>
 
