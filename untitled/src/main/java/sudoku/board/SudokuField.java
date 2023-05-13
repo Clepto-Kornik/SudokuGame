@@ -2,7 +2,7 @@ package sudoku.board;
 
 import sudoku.group.SudokuGroup;
 
-public class SudokuField {
+public class SudokuField implements Comparable<SudokuField> {
     private int value;
 
     public SudokuField(int value) {
@@ -25,5 +25,10 @@ public class SudokuField {
     public SudokuField clone () throws CloneNotSupportedException {
         SudokuField clone = (SudokuField) super.clone();
         return clone;
+    }
+
+    @Override
+    public int compareTo(SudokuField other) {
+        return this.getFieldValue() - other.getFieldValue();
     }
 }
