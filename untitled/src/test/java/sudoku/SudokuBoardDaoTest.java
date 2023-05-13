@@ -2,7 +2,6 @@ package sudoku;
 
 import org.junit.jupiter.api.Test;
 import sudoku.board.SudokuBoard;
-import sudoku.solver.FileSudokuBoardDao;
 import sudoku.solver.SudokuBoardDaoFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
