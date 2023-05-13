@@ -1,6 +1,7 @@
 package sudoku;
 
 import org.junit.jupiter.api.Test;
+import sudoku.board.SudokuBoard;
 import sudoku.board.SudokuField;
 import sudoku.group.SudokuRow;
 
@@ -9,14 +10,7 @@ class SudokuRowTest {
 
     @Test
     public void testVerifyReturnsTrueForValidRow() {
-        int[] values = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-
-        SudokuField[] fields = new SudokuField[9];
-        for(int i=0; i<9; i++) {
-            fields[i] = new SudokuField(values[i]);
-        }
-
-        SudokuRow row = new SudokuRow(fields);
+        SudokuRow row = createSudokuRow();
         assertTrue(row.verify());
     }
 
@@ -31,5 +25,35 @@ class SudokuRowTest {
 
         SudokuRow row = new SudokuRow(fields);
         assertFalse(row.verify());
+    }
+
+    @Test
+    public void testCloneHasProperValue() {
+        SudokuRow row = createSudokuRow();
+        SudokuRow clone = row.clone();
+
+        for(int i=0; i<9; i++) {
+            assertEquals(row.getValue(i), clone.getValue(i));
+        }
+    }
+
+    @Test
+    public void testCloneReturnsNewObjects() {
+        SudokuRow row = createSudokuRow();
+        SudokuRow clone = row.clone();
+
+        int oldValue = row.getValue(0);
+        row.setValue(0, 5);
+
+        assertEquals(clone.getValue(0), oldValue);
+    }
+
+    private SudokuRow createSudokuRow() {
+        int[] values = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        SudokuField[] fields = new SudokuField[9];
+        for(int i=0; i<9; i++) {
+            fields[i] = new SudokuField(values[i]);
+        }
+        return new SudokuRow(fields);
     }
 }
