@@ -2,7 +2,7 @@ package sudoku.board;
 
 import sudoku.group.SudokuGroup;
 
-public class SudokuField implements Comparable<SudokuField> {
+public class SudokuField implements Comparable<SudokuField>, Cloneable {
     private int value;
 
     public SudokuField(int value) {
@@ -22,9 +22,12 @@ public class SudokuField implements Comparable<SudokuField> {
     }
 
     @Override
-    public SudokuField clone () throws CloneNotSupportedException {
-        SudokuField clone = (SudokuField) super.clone();
-        return clone;
+    public SudokuField clone () {
+        try {
+            return (SudokuField) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

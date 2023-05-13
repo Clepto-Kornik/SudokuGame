@@ -27,4 +27,20 @@ class SudokuFieldTest {
         SudokuField other = new SudokuField(7);
         assertTrue(field.compareTo(other) < 0);
     }
+
+    @Test
+    public void testCloneHasProperValue() {
+        SudokuField field = new SudokuField(5);
+        SudokuField clone = field.clone();
+        assertEquals(field.getFieldValue(), clone.getFieldValue());
+    }
+
+    @Test
+    public void testCloneReturnNewObject() {
+        SudokuField field = new SudokuField(5);
+        SudokuField clone = field.clone();
+
+        field.setFieldValue(6);
+        assertEquals(clone.getFieldValue(), 5);
+    }
 }
