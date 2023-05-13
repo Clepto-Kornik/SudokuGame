@@ -5,9 +5,9 @@ import sudoku.group.SudokuColumn;
 import sudoku.group.SudokuRow;
 import sudoku.solver.BacktrackSudokuSolver;
 
-public class SudokuBoard {
+public class SudokuBoard implements Cloneable {
     public static final int SIZE = 9;
-    private final SudokuField[][] fields = new SudokuField[SIZE][SIZE];
+    private SudokuField[][] fields = new SudokuField[SIZE][SIZE];
 
     public SudokuBoard() {
         for (int y = 0; y < SIZE; y++) {
@@ -102,8 +102,20 @@ public class SudokuBoard {
     }
 
     @Override
-    public SudokuBoard clone () throws CloneNotSupportedException {
-        SudokuBoard clone = (SudokuBoard) super.clone();
-        return clone;
+    public SudokuBoard clone () {
+        try {
+            SudokuBoard clone = (SudokuBoard) super.clone();
+
+            clone.fields = new SudokuField[SIZE][SIZE];
+            for(int y=0; y<SIZE; y++) {
+                for(int x=0; x<SIZE; x++) {
+                    clone.fields[y][x] = this.fields[y][x].clone();
+                }
+            }
+
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
