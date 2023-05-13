@@ -18,13 +18,7 @@ public class SudokuBoard implements Cloneable {
     }
 
     public static SudokuBoard copyBoard(SudokuBoard otherBoard) {
-        SudokuBoard copy = new SudokuBoard();
-        for (int y = 0; y < SIZE; y++) {
-            for (int x = 0; x < SIZE; x++) {
-                copy.set(x, y, otherBoard.get(x, y));
-            }
-        }
-        return copy;
+        return otherBoard.clone();
     }
 
     public void printBoard() {
