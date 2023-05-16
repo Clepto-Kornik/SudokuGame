@@ -2,8 +2,8 @@ package sudoku.group;
 
 import sudoku.board.SudokuField;
 
-public abstract class SudokuGroup {
-    private final SudokuField[] fields;
+public abstract class SudokuGroup implements Cloneable {
+    private SudokuField[] fields;
 
     public SudokuGroup(SudokuField[] fields) {
         this.fields = fields;
@@ -22,8 +22,24 @@ public abstract class SudokuGroup {
     }
 
     @Override
-    public SudokuGroup clone () throws CloneNotSupportedException {
-        SudokuGroup clone = (SudokuGroup) super.clone();
-        return clone;
+    public SudokuGroup clone() {
+        try {
+            SudokuGroup clone = (SudokuGroup) super.clone();
+            clone.fields = clone.fields.clone();
+            for (int i = 0; i < clone.fields.length; i++) {
+                clone.fields[i] = clone.fields[i].clone();
+            }
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void setValue(int index, int value) {
+        fields[index].setFieldValue(value);
+    }
+
+    public int getValue(int index) {
+        return fields[index].getFieldValue();
     }
 }

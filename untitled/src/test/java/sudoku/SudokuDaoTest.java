@@ -2,7 +2,6 @@ package sudoku;
 
 import org.junit.jupiter.api.Test;
 import sudoku.board.SudokuBoard;
-import sudoku.solver.FileSudokuBoardDao;
 import sudoku.solver.SudokuBoardDaoFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,7 +9,7 @@ class SudokuBoardDaoTest {
 
     @Test
     public void testSavingAndReadingDao() {
-        SudokuBoard board = new SudokuBoard();
+        SudokuBoard board;
         SudokuBoard board2 = new SudokuBoard();
         board = board2;
         board.solveGame();
@@ -29,7 +28,7 @@ class SudokuBoardDaoTest {
                 }
             }
         }
-        System.out.println("\nKURWA\n");
+        System.out.println("\nWRONG\n");
         board.printBoard();
         assertTrue(flag);
     }
